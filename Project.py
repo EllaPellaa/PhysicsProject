@@ -7,7 +7,7 @@ import streamlit as st
 from streamlit_folium import st_folium
 from scipy.signal import butter,filtfilt
 
-df = pd.read_csv("./LinearAcceleration.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/EllaPellaa/PhysicsProject/refs/heads/main/LinearAcceleration.csv")
 
 st.title('K채velymatka')
 
@@ -75,7 +75,7 @@ st.write('Askelm채채r채 laskettuna fourier-analyysin avulla:  ', round(askelm채�
 
 # ----------- GPS-data ja haversine --------------
 
-df2 = pd.read_csv('./Location.csv')
+df2 = pd.read_csv('https://raw.githubusercontent.com/EllaPellaa/PhysicsProject/refs/heads/main/Location.csv')
 
 #Haversine formula
 def haversine(lon1, lat1, lon2, lat2):
